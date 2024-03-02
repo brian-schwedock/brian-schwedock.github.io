@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brian C. Schwedock - Personal Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">Brian C. Schwedock</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#research">RESEARCH</a></li>
+            <li><a href="#publications">PUBLICATIONS</a></li>
+            <li><a href="cv/Brian_Schwedock_CV.pdf">CV</a></li>
+            <li><a href="https://scholar.google.com/citations?user=6Vu0j6QAAAAJ&hl=en">
+                GOOGLE SCHOLAR</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid bg-grey">
+      <div class="row">
+        <div class="wrapper">
+
+          <div class="col-sm-4">
+            <div class="about-photo">
+              <img src="images/headshot.jpg" alt="About Image"
+                   class="img-responsive img-rounded center-block" />
+            </div>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="about-content">
+              <h2>About Me</h2>
+              <br>
+              <h4>I am currently an SoC Architect at <a href="https://semiconductor.samsung.com/us/about-us/us-office/us-r-and-d-labs/computing-lab-sarc-acl/">Samsung ACL</a>.</h4>
+              <h4>I completed my Ph.D in Electrical and Computer Engineering at
+                Carnegie Mellon University.</h4>
+              <h4>My advisor was
+                <a href="http://www.cs.cmu.edu/~beckmann/">Nathan Beckmann</a>,
+                and I was a member of
+                <a href="https://cmu-corgi.github.io/">CORGi</a>.</h4>
+              <h4>My research interests broadly include computer architecture
+                and computer systems with a focus on caching. I am particularly
+                interested in problems at the intersection of hardware and
+                software.</h4>
+              <h4>I was also a member of the
+                <a href="https://research.ece.cmu.edu/calcm/">CALCM</a> and
+                <a href="https://www.pdl.cmu.edu/index.shtml">PDL</a> research
+                organizations at CMU.</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Research Section) -->
+    <div id="research" class="container-fluid">
+      <h2 class="text-center">Research Projects</h2>
+      <br>
+      <h4> I developed
+        <a href="https://cmu-corgi.github.io/projects/poly.html">
+          täkō</a>, a polymorphic cache hierarchy which enables software to
+        fully observe and control data movement. täkō programs can register
+        callbacks on certain address ranges so that software is invoked when
+        data in this range moves. täkō's general architecture and programming
+        interface enable many application-specific optimizations which
+        previously each required their own dedicated hardware.</h4>
+      <br>
+      <h4>I developed
+        <a href="https://cmu-corgi.github.io/projects/software-defined-hierarchy.html">
+          Jumanji</a>, a data-placement technique for dynamic NUCA last-level
+        caches in chip-multiprocessors. Whereas previous D-NUCA techniques
+        focused on only throughput-oriented applications, Jumanji provides
+        quality-of-service for datacenter workloads where multiple
+        high-priority, latency-critical applications run alongside
+        low-priority, batch applications and where applications across VMs
+        require security isolation from each other.</h4>
+      <br>
+      <h4>I spent multiple internships at Google optimizing in-memory caches for
+        miss ratio, I/O cost, and memory usage. This involved developing a
+        production-accurate simulation infrastructure from scratch.</h4>
+      <br>
+      <h4>In undergrad, my research in game theory with the
+        <a href="https://teamcore.seas.harvard.edu/">Teamcore Research Group</a>
+        (formerly at USC) contributed to
+        <a href="https://teamcore.seas.harvard.edu/paws-protection-assistant-wildlife-security">
+          PAWS: Protection Assistant for Wildlife Security</a>.</h4>
+    </div>
+
+    <!-- Container (Publications Section) -->
+    <div id="publications" class="container-fluid bg-grey">
+      <h2 class="text-center">Publications</h2>
+      <br>
+      <ul class="publication-list">
+
+        <li>
+          <strong>UDIR: Towards a Unified Compiler Framework for Reconfigurable Dataflow Architectures</strong>
+          <br>
+          Nikhil Agarwal, Mitchell Fream, Souradip Ghosh, <em>Brian C. Schwedock</em>, Nathan Beckmann
+          <br>
+          WDDSA @ MICRO 2023
+          <br>
+          [<a title="2023.wddsa.udir - pdf" href="papers/2023.wddsa.udir.pdf">pdf</a>]
+        </li>
+
+        <br>
+        <li>
+          <strong>Kobold: Simplified Cache Coherence for Cache-Attached Accelerators</strong>
+          <br>
+          Jennifer Brana, <em>Brian C. Schwedock</em>, Yatin A. Manerkar, Nathan Beckmann
+          <br>
+          IEEE CAL 2023
+          <br>
+          [<a title="2023.cal.kobold - doi" href="https://doi.org/10.1109/LCA.2023.3269399">doi</a>]
+          [<a title="2023.cal.kobold - pdf" href="papers/2023.cal.kobold.pdf">pdf</a>]
+          [<a title="2023.cal.kobold - talk" href="https://www.youtube.com/watch?v=5ThjVEQx8aE&ab_channel=ComputerOrganizationResearchGroup%28CORGi%29%40CMU">talk</a>]
+        </li>
+
+        <br>
+        <li>
+          <strong>Kobold: Simplified Cache Coherence for Cache-Attached Accelerators</strong>
+          <br>
+          Jennifer Brana, <em>Brian C. Schwedock</em>, Yatin A. Manerkar, Nathan Beckmann
+          <br>
+          WDDSA @ MICRO 2022
+          <br>
+          [<a title="2022.wddsa.kobold - pdf" href="papers/2022.wddsa.kobold.pdf">pdf</a>]
+        </li>
+
+        <br>
+        <li>
+          <strong>täkō: A Polymorphic Cache Hierarchy for General-Purpose Optimization of Data Movement</strong>
+          <br>
+          <em>Brian C. Schwedock</em>, Piratach Yoovidhya, Jennifer Seibert, Nathan Beckmann
+          <br>
+          ISCA 2022 (Best Paper nominee)
+          <br>
+          [<a title="2022.isca.tako - doi" href="https://doi.org/10.1145/3470496.3527379">doi</a>]
+          [<a title="2022.isca.tako - pdf" href="papers/2022.isca.tako.pdf">pdf</a>]
+          [<a title="2022.isca.tako - slides" href="slides/2022.isca.tako.pptx">slides</a>]
+          [<a title="2022.isca.tako - talk live" href="https://www.youtube.com/watch?v=kZukDOmyLjs&t=3028s">talk - live</a>]
+          [<a title="2022.isca.tako - talk recorded" href="https://www.youtube.com/watch?v=P7uQHGNOtWI">talk - recorded</a>]
+        </li>
+
+        <br>
+        <li>
+          <strong>Jumanji: The Case for Dynamic NUCA in the Datacenter</strong>
+          <br>
+          <em>Brian C. Schwedock</em>, Nathan Beckmann
+          <br>
+          MICRO 2020
+          <br>
+          [<a title="2020.micro.jumanji - doi" href="https://doi.org/10.1109/MICRO50266.2020.00061">doi</a>]
+          [<a title="2020.micro.jumanji - pdf" href="papers/2020.micro.jumanji.pdf">pdf</a>]
+          [<a title="2020.micro.jumanji - slides" href="slides/2020.micro.jumanji.pptx">slides</a>]
+          [<a title="2020.micro.jumanji - talk" href="https://www.youtube.com/watch?v=3cRPxFr34ig&ab_channel=MICROSymposium">talk</a>]
+          [<a title="2020.micro.jumanji - code" href="https://github.com/CMU-CORGI/LLC-port-attack">code</a>]
+        </li>
+
+        <br>
+        <li>
+          <strong>PAWS – A Deployed Game-Theoretic Application to Combat Poaching</strong>
+          <br>
+          Fei Fang, Thanh H. Nguyen, Rob Pickles, Wai Y. Lam,
+          Gopalasamy R. Clements, Bo An, Amandeep Singh, <em>Brian C. Schwedock</em>,
+          Milind Tambe, Andrew Lemieux
+          <br>
+          AI Magazine 2017
+          <br>
+          [<a title="2017.aim.paws - doi" href="https://doi.org/10.1609/aimag.v38i1.2710">doi</a>]
+          [<a title="2017.aim.paws - pdf" href="papers/2017.aim.paws.pdf">pdf</a>]
+          [<a title="2017.aim.paws - AI Magazine" href="http://www.aimagazine-digital.org/aimagazine/spring_2017?sub_id=o5bo0DpA2OET&amp;pg=25#pg25">AI Magazine version</a>]
+        </li>
+
+      </ul>
+    </div>
+  </body>
+</html>
