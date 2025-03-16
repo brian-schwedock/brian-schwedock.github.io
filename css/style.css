@@ -9,7 +9,7 @@ body {  }
     background-color: #f4511e;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
@@ -82,19 +82,10 @@ body {  }
 }
 
 .about-content {
-    padding-top: 35px;
+    padding-top: 42px;
 }
 
 /* For Publications Section */
 .publication-list {
     font-size: 20px;
-}
-
-/* For Interests Section */
-.interest-list {
-    font-size: 20px;
-}
-
-.carousel-img {
-    image-orientation: from-image;
 }
