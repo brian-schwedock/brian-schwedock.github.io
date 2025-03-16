@@ -30,12 +30,13 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#research">RESEARCH</a></li>
-            <li><a href="#publications">PUBLICATIONS</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="cv/Brian_Schwedock_CV.pdf">CV</a></li>
             <li><a href="https://scholar.google.com/citations?user=6Vu0j6QAAAAJ&hl=en">
-                GOOGLE SCHOLAR</a></li>
+                Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/brian-schwedock/">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -57,21 +58,13 @@
             <div class="about-content">
               <h2>About Me</h2>
               <br>
-              <h4>I am currently an SoC Architect at <a href="https://semiconductor.samsung.com/us/about-us/us-office/us-r-and-d-labs/computing-lab-sarc-acl/">Samsung ACL</a>.</h4>
+              <h4>I am currently an SoC Architect at
+                <a href="https://semiconductor.samsung.com/us/about-us/us-office/us-r-and-d-labs/computing-lab-sarc-acl/">Samsung ACL</a>.</h4>
               <h4>I completed my Ph.D in Electrical and Computer Engineering at
-                Carnegie Mellon University.</h4>
-              <h4>My advisor was
-                <a href="http://www.cs.cmu.edu/~beckmann/">Nathan Beckmann</a>,
-                and I was a member of
-                <a href="https://cmu-corgi.github.io/">CORGi</a>.</h4>
-              <h4>My research interests broadly include computer architecture
-                and computer systems with a focus on caching. I am particularly
-                interested in problems at the intersection of hardware and
-                software.</h4>
-              <h4>I was also a member of the
-                <a href="https://research.ece.cmu.edu/calcm/">CALCM</a> and
-                <a href="https://www.pdl.cmu.edu/index.shtml">PDL</a> research
-                organizations at CMU.</h4>
+                Carnegie Mellon University, advised
+                by <a href="http://www.cs.cmu.edu/~beckmann/">Nathan
+                Beckmann</a> in the <a href="https://cmu-corgi.github.io/">CORGi
+                research group</a>.</h4>
             </div>
           </div>
 
@@ -81,37 +74,21 @@
 
     <!-- Container (Research Section) -->
     <div id="research" class="container-fluid">
-      <h2 class="text-center">Research Projects</h2>
+      <h2 class="text-center">Research</h2>
       <br>
-      <h4> I developed
-        <a href="https://cmu-corgi.github.io/projects/poly.html">
-          täkō</a>, a polymorphic cache hierarchy which enables software to
-        fully observe and control data movement. täkō programs can register
-        callbacks on certain address ranges so that software is invoked when
-        data in this range moves. täkō's general architecture and programming
-        interface enable many application-specific optimizations which
-        previously each required their own dedicated hardware.</h4>
-      <br>
-      <h4>I developed
-        <a href="https://cmu-corgi.github.io/projects/software-defined-hierarchy.html">
-          Jumanji</a>, a data-placement technique for dynamic NUCA last-level
-        caches in chip-multiprocessors. Whereas previous D-NUCA techniques
-        focused on only throughput-oriented applications, Jumanji provides
-        quality-of-service for datacenter workloads where multiple
-        high-priority, latency-critical applications run alongside
-        low-priority, batch applications and where applications across VMs
-        require security isolation from each other.</h4>
-      <br>
-      <h4>I spent multiple internships at Google optimizing in-memory caches for
-        miss ratio, I/O cost, and memory usage. This involved developing a
-        production-accurate simulation infrastructure from scratch.</h4>
-      <br>
-      <h4>In undergrad, my research in game theory with the
-        <a href="https://teamcore.seas.harvard.edu/">Teamcore Research Group</a>
-        (formerly at USC) contributed to
-        <a href="https://teamcore.seas.harvard.edu/paws-protection-assistant-wildlife-security">
-          PAWS: Protection Assistant for Wildlife Security</a>.</h4>
-    </div>
+      <h4>My research interests broadly include computer architecture and
+      computer systems, with an emphasis on memory systems and data
+      movement. My <a title="Optimizing Data Movement Through Software Control
+      of General-Purpose Hardware Caches" href="papers/phd_dissertation.pdf">PhD
+      dissertation</a> tackled the data-movement challenge by proposing systems
+      that move compute closer to data and data closer to compute. As a research
+      intern at Google, I optimized in-memory caches for miss ratio, I/O cost,
+      and memory usage. And my research in game theory with
+      the <a href="https://teamcore.seas.harvard.edu/">Teamcore research
+      group</a> contributed
+      to <a href="https://teamcore.seas.harvard.edu/research-paws-protection-assistant-wildlife-security/">
+      PAWS: Protection Assistant for Wildlife Security</a>
+      </h4>
 
     <!-- Container (Publications Section) -->
     <div id="publications" class="container-fluid bg-grey">
